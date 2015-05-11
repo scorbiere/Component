@@ -10,6 +10,7 @@ angular.module('BusyHandler')
         link: function($scope, $element, $attrs) {
 				  var setBusy = function(isBusy) {
 					if (isBusy) {
+					  //Custom overlay here !!!
 					  $element.block({ message: null, overlayCSS: { backgroundColor: '#707070' } });
 					}
 					else {
